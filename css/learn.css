@@ -4,6 +4,7 @@ body {
     background-image: url("../img/vscode_bg_img.png");
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: cover;
     color: rgb(203, 203, 206);
 }
 
@@ -21,7 +22,7 @@ h1 {
 }
 h2 {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     color: rgb(203, 133, 73);
 }
 h3 {
@@ -35,3 +36,134 @@ p {
     line-height: 1.6em;
     margin: auto 150px;
 }
+nav{
+    margin: 5%;
+    /* margin-top: 5%; */
+}
+nav > ul > li{
+    display: inline;
+    margin: 0 2%;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(203, 133, 73);
+}
+nav > ul{
+    display: inline;
+    font-size: 24px;
+}
+nav > a{
+    display: inline;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(15, 121, 210);
+    margin-right: 45%;
+    margin-left: 8%;
+}
+#learnGame{
+    display: flex;
+}
+#learnGame > section{
+    margin: 0 7%;
+    text-align: center;
+    width: 20%;
+    background-image: url('../img/card.png');
+    /* border: 2px outset rgb(15, 121, 210); */
+    border-radius: 2px;
+    z-index: 1;
+}
+section > section{
+    background-color: rgba(124, 124, 124, 0.4);
+    z-index: 2;
+    height: 200px;
+    /* margin-top: -20px; */
+    border: 2px outset rgb(15, 121, 210);
+    border-radius: 2px;
+    padding: 5px;
+}
+#learnGame > section:first-child{
+    width: 22%;
+}
+#learnGame:first-child{
+    height: 100%;
+}
+h4{
+    color: rgb(37, 37, 38);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a:link{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+    color: rgb(230, 224, 70);
+}
+
+h3{
+    margin-left: 13%;
+}
+h3{
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    animation-iteration-count: infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+
+/* **************************************BUTTON SECTION************************************* */
+
+#buttonSpace{
+    margin-left: 40.75%;
+}
+button#playTheGame > a{
+    text-decoration: none;
+    color: rgb(203, 133, 73);
+}
+button{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.75% 3%;
+    border-radius: 3px;
+    border: 1px solid rgb(37, 37, 38);
+    border-color: rgb(15, 121, 210);
+    font-size: 18px;
+    color: rgb(230, 224, 70);
+    background-color: rgba(87, 201, 174, 0);
+}
+
+
+
+/* **********************************FORM SECTION*************************************** */
+
+#inputter{
+    align-content: center;
+}
+#new-store{
+    width: 40%;
+    margin-left: 30%;
+}
+/* form{
+
+} */
